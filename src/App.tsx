@@ -3,6 +3,8 @@ import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import Children from "./components/Children";
+import ParentToChild from "./components/ParentToChild";
 
 
 function App() {
@@ -39,6 +41,16 @@ function App() {
             <Person name={personName}/>
             <PersonList nameLists={personList}/>
             <Status status="loading"/>
+            <Children>
+                String as children in the component
+            </Children>
+
+            <ParentToChild>
+             Children component inside parent component
+                <Children>
+                   From parent to children using children component also
+                </Children>
+            </ParentToChild>
         </div>
     );
 }
