@@ -2,6 +2,7 @@ import "./css/global.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 
 function App() {
@@ -16,17 +17,17 @@ function App() {
             firstName: "Test",
             lastName: "one"
         },
-         {
+        {
             id: 1,
             firstName: "Test",
             lastName: "two"
         },
-         {
+        {
             id: 2,
             firstName: "Test",
             lastName: "three"
         },
-         {
+        {
             id: 3,
             firstName: "Test",
             lastName: "four"
@@ -37,6 +38,7 @@ function App() {
             <Greet name="sailesh" isLoggedIn={true} messageCount={2}/>
             <Person name={personName}/>
             <PersonList nameLists={personList}/>
+            <Status status="loading"/>
         </div>
     );
 }
