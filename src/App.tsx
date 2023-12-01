@@ -5,6 +5,7 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import Children from "./components/Children";
 import ParentToChild from "./components/ParentToChild";
+import Optional from "./components/Optional";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
                    From parent to children using children component also
                 </Children>
             </ParentToChild>
+            <Optional name={'Jhon'} location={'Nepal'}/>
         </div>
     );
 }
